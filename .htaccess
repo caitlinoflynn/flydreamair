@@ -1,0 +1,37 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:panda-lingo.com
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} (www\.)?caitlinoflynn.com
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule    	^([0-9]+)/(.+)                       /projects/flydreamair/categories/?id=$1&name=$2             [L,QSA]
+RewriteRule    	^subcategory/([0-9]+)/(.+)           /projects/flydreamair/subcategories/?s_id=$1&name=$2             [L,QSA]
+
+RewriteRule    	^product/([0-9]+)/(.+)           /projects/flydreamair/product/?id=$1&name=$2             [L,QSA]
+
+RewriteRule    	^profile/([0-9]+)/               /projects/flydreamair/profile/?id=$1             [L,QSA]
+RewriteRule    	^profile/rewards/([0-9]+)/       projects/flydreamair/profile/rewards/?id=$1             [L,QSA]
+RewriteRule    	^profile/wishlist/([0-9]+)/       projects/flydreamair/profile/wishlist/?id=$1             [L,QSA]
+RewriteRule    	^profile/address-book/([0-9]+)/       projects/flydreamair/profile/address-book/?id=$1             [L,QSA]
+RewriteRule    	^profile/order-history/([0-9]+)/       projects/flydreamair/profile/order-history/?id=$1             [L,QSA]
+RewriteRule    	^profile/saved-cards/([0-9]+)/       projects/flydreamair/profile/saved-cards/?id=$1             [L,QSA]
+RewriteRule    	^profile/track-order/([0-9]+)/       projects/flydreamair/profile/track-order/?id=$1             [L,QSA]
+
+RewriteRule    	^cart/([0-9]+)/payment/           /projects/flydreamair/payment/?id=$1             [L,QSA]
+
+
+
+
+
+
+
+

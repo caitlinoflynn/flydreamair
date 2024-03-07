@@ -1,0 +1,184 @@
+.company-name:hover {
+    color: #292129;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.wrap {
+    width: 100%;
+    margin: 120px 0;
+}
+
+#myCarousel {
+    position: relative;
+}
+
+.fragrance-header, .technology-header {
+    text-align: left;
+    text-transform: none;
+}
+
+.technology-header {
+    font-size: 4vw;
+    font-family: Play, sans-serif;
+    font-weight: bold;
+    text-align: right;
+}
+
+#part1 {
+    position: relative;
+    top: 20px;
+}
+
+#part2 {
+    margin-left: 50px;
+}
+
+.item {
+    position: relative;
+}
+
+.fragrance-info {
+    position: absolute;
+    color: white;
+    right: 100px;
+    top: 40%;
+    transform: translateY(-40%);
+    width: 40%;
+}
+
+.technology-info {
+    position: absolute;
+    color: #292129;
+    right: 180px;
+    top: 52%;
+    transform: translateY(-52%);
+    margin: 0;
+    text-align: right;
+    width: 60%;
+}
+
+.wines-info {
+    position: absolute;
+    color: black;
+    top: 40%;
+    transform: translateY(-40%);
+    width: 100%;
+}
+
+.fragrance-header {
+    color: white;
+    font-size: 4vw;
+    margin-bottom: 40px;
+    font-family: Italiana, serif;
+}
+
+.wines-header {
+    font-size: 4vw;
+    margin-bottom: 40px;
+    font-family: Playball, sans-serif;
+    text-transform: none;
+}
+
+.fragrance-description, .technology-description, .wines-description  {
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+.wines-description {
+    text-align: center;
+}
+
+#wines-btn {
+    margin: 0 auto;
+    background-color: #292129;
+    color: white;
+}
+
+#wines-btn:hover {
+    background-color: #8A646B;
+}
+
+button {
+    color: #292129;
+}
+
+#technology-btn {
+    float: right;
+    background-color: #292129;
+    color: white;
+}
+
+#technology-btn:hover {
+    background-color: #333333;
+}
+
+
+
+.carousel-indicators {
+    bottom: -30px;
+    z-index: 0;
+}
+
+.carousel-indicators li {
+    background-color: #CBBCC1;
+    border: none;
+    border-radius: 0;
+    width: 100px;
+    height: 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #8A646B;
+    position: relative;
+    bottom: 1px;
+    width: 100px;
+    height: 5px;
+}
+
+.section {
+    margin: 150px 0;
+}
+
+.categories {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.shop-category {
+    background-color: #8A646B;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+    bottom: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.shop-category:hover {
+    bottom: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #CBBCC1;
+}
+
+
+.shop-category .description {
+    background-color: white;
+    padding: 20px;
+}
+
+.category-img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-inner {
+    background-color: #8A646B;
+}
